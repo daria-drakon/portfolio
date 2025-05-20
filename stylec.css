@@ -23,7 +23,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background: url('images/your-header-image-a.png') center/cover no-repeat;
+  background: url('img/your-header-image-a.png') center/cover no-repeat;
   height: 800px;
   padding: 2rem 2rem 0.5rem 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
