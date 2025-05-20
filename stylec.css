@@ -1,0 +1,451 @@
+:root {
+  --light-bg: #EFEADE;
+  --text-dark: #1e1e1e;
+  --header-footer-bg: #EFEADE;
+  --menu-color: #220A0D;
+  --main-font: 'Courier Prime', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: var(--light-bg);
+  font-family: var(--main-font);
+  color: var(--text-dark);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: url('images/your-header-image-a.png') center/cover no-repeat;
+  height: 800px;
+  padding: 2rem 2rem 0.5rem 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.header-icon {
+  height: 75px;
+  width: auto;
+  margin-top: -30px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: var(--menu-color);
+  font-weight: 500;
+}
+
+.main-content {
+  padding: 2rem;
+  min-height: 70vh;
+}
+
+.site-footer {
+  background-color: var(--header-footer-bg);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: bold;
+}
+
+.footer-logo-img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+}
+
+.footer-sub {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  gap: 0.2rem;
+  margin-top: 30px;
+  padding-left: 1rem;
+}
+
+.footer-center p:first-child {
+  font-weight: bold;
+}
+
+.footer-center p:last-child {
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 30px;
+  padding-right: 1rem;
+}
+
+.footer-social-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.site-footer a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.footer-copy {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.category-buttons button {
+  background-color: var(--light-bg);
+  color: var(--menu-color);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-family: var(--main-font);
+  font-size: 0.95rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-buttons button:hover {
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category-buttons button.active {
+  background-color: #dfeee3;
+  font-weight: bold;
+}
+
+.creative-sheet {
+  background: #EFEADE;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  font-family: var(--main-font);
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.creative-sheet h2,
+.creative-sheet h3,
+.creative-sheet h4 {
+  margin-bottom: 1rem;
+  color: var(--menu-color);
+  text-align: center;
+  width: 100%;
+}
+
+.creative-sheet p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.creative-sheet a {
+  font-size: 0.95rem;
+  color: #1C3C2A;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.art-grid img {
+  width: 100%;
+  max-width: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+
+}
+
+.art-grid img.center {
+  grid-column: 3 / span 1;
+  max-width: 180px;
+}
+
+.creative-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.creative-grid img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #EFEADE;
+  padding: 0.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.poem-preview {
+  background: #fff;
+  border-left: 5px solid var(--menu-color);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 100%;
+}
+
+.poem-preview h4 {
+  margin-bottom: 0.5rem;
+  color: var(--menu-color);
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.poem-preview p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.poem-preview a {
+  font-style: italic;
+  color: var(--menu-color);
+  text-align: left;
+  display: block;
+}
+
+.resume-photo {
+  width: 100%;
+  max-width: 130px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rp-bio {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  width: 100%;
+}
+
+.rp-bio h3 {
+  margin-bottom: 1rem;
+  color: var(--menu-color);
+  text-align: center;
+}
+
+.rp-bio p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+/* 🎭 Twilight RP – Фото слева, текст справа */
+.twilight-rpg {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.twilight-rpg .rp-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.twilight-rpg .rp-images img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.twilight-rpg .rp-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.twilight-rpg .rp-text h3 {
+  margin-bottom: 1rem;
+  color: var(--menu-color);
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.twilight-rpg .rp-text p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+.twilight-rpg {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.twilight-rpg .rp-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.twilight-rpg .rp-text {
+  flex-grow: 1;
+  max-width: calc(100% - 300px); /* чтобы не уходил под блок */
+  
+}
+
+.twilight-rpg .rp-text h3 {
+  margin-bottom: 1rem;
+  color: var(--menu-color);
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.twilight-rpg .rp-text p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-img {
+  flex: 0 0 calc(100% / 3 - 0.67rem); /* 3 изображения + отступы */
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #EFEADE;
+  padding: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #EFEADE;
+  color: #220A0D;
+  border: 1px solid #220A0D;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-family: var(--main-font);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.slide-btn:hover {
+  background-color: #220A0D;
+  color: #EFEADE;
+}
+
+.slide-btn.prev {
+  left: 10px;
+}
+
+.slide-btn.next {
+  right: 10px;
+}

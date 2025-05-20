@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative – Daria Drakon</title>
+  <link rel="stylesheet" href="stylec.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <img src="images/logo.png" alt="Logo" class="header-icon" />
+    </div>
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="creative.html">Creative</a>
+      <a href="research.html">Research</a>
+      <a href="planner.html">Planner</a>
+    </nav>
+  </header>
+
+ <main class="main-content">
+
+  <div class="category-buttons">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="art">Artworks</button>
+  <button class="filter-btn" data-filter="texts">Poems</button>
+  <button class="filter-btn" data-filter="mixed">Text RPG</button>
+</div>
+
+
+  <!-- 🎨 Иллюстрации 
+  <div class="creative-sheet creative-section art">
+    <h3 class="centered">Main Illustrations</h3>
+    <div class="art-grid">
+      <img src="art1.png" alt="Art Side">
+      <img src="art2.png" alt="Art Side">
+      <img src="art-main.png" alt="Main Illustration" class="center">
+      <img src="art3.png" alt="Art Side">
+      <img src="art4.png" alt="Art Side">
+    </div>
+  </div>-->
+ <div class="creative-sheet creative-section art">
+  <h3 class="centered">Main Illustrations</h3>
+  <div class="slideshow-container">
+    <button class="slide-btn prev" onclick="plusSlides(-1)">&#10094;</button>
+    <div class="slide-track">
+      <img src="images/art1.png" class="slide-img" alt="Art 1">
+      <img src="images/art2.png" class="slide-img" alt="Art 2">
+      <img src="images/art-main.png" class="slide-img" alt="Main Art">
+      <img src="images/art3.png" class="slide-img" alt="Art 3">
+      <img src="images/art4.png" class="slide-img" alt="Art 4">
+      <img src="images/art5.png" class="slide-img" alt="Art 5">
+      <img src="images/art6.png" class="slide-img" alt="Art 6">
+      <img src="images/art7.png" class="slide-img" alt="Art 7">
+      <img src="images/art8.png" class="slide-img" alt="Art 8">
+      <img src="images/art9.png" class="slide-img" alt="Art 9">
+    </div>
+    <button class="slide-btn next" onclick="plusSlides(1)">&#10095;</button>
+  </div>
+</div>
+<script>
+  let currentIndex = 0;
+  const slidesToShow = 3;
+  const track = document.querySelector('.slide-track');
+  const slides = document.querySelectorAll('.slide-img');
+  const totalSlides = slides.length+4;
+
+  function showSlide(index) {
+    const maxIndex = totalSlides - slidesToShow;
+    if (index < 0) currentIndex = maxIndex;
+    else if (index > maxIndex) currentIndex = 0;
+    else currentIndex = index;
+
+    const offset = -(currentIndex * (100 / slidesToShow));
+    track.style.transform = `translateX(${offset}%)`;
+  }
+
+  function plusSlides(n) {
+    showSlide(currentIndex + n);
+  }
+
+  showSlide(currentIndex);
+</script>
+
+
+  <!-- 🐺 Wolfie Yumi Stickers -->
+  <div class="creative-sheet creative-section art">
+    <h3>Wolfie Yumi – Sticker Pack</h3>
+    <div class="creative-grid">
+      <img src="images/wolfie1.png" alt="Wolfie 1">
+      <img src="images/wolfie2.png" alt="Wolfie 2">
+      <img src="images/wolfie3.png" alt="Wolfie 3">
+      <img src="images/wolfie4.png" alt="Wolfie 4">
+      <img src="images/wolfie5.png" alt="Wolfie 5">
+      <img src="images/wolfie6.png" alt="Wolfie 6">
+    </div>
+  </div>
+
+  <!-- 🐭 Mickey Stickers -->
+  <div class="creative-sheet creative-section art">
+    <h3>Mickey&Co – Stickers</h3>
+    <div class="creative-grid">
+      <img src="images/mickey1.png" alt="Sticker 1">
+      <img src="images/mickey2.png" alt="Sticker 2">
+      <img src="images/mickey3.png" alt="Sticker 3">
+    </div>
+  </div>
+
+  <!-- ✍️ Поэмы -->
+  <div class="creative-sheet creative-section texts">
+    <h4 style="font-family: 'Parisienne', cursive; font-size: 26px;">Poem 1: Tangled Thoughts</h4>
+    <p>Trouble. We've got a little trouble.</p>
+    <p>I'm 19, and you…? I don't remember.</p>  
+    <p></p>That's just a fact. We're both lost.
+    <p>In this bewildering world we're in.</p>
+    <p>Am I wanting love? What's wrong with me?</p>
+    <p>You're a part of me, yet never to be mine.</p>
+    <p>You emerge from the shadows,</p>
+    <p>Like echoes of a distant past.</p>
+    <p>I flee when all's well and good,</p>
+    <p>Lost amidst my own emotions' flood.</p>
+    <p>Someone will love you, but it's not me.</p>
+    <p>All's awry — our kinship, life, and emotions' sea.</p>
+    <p>I'm lost in the maze of my own mind,</p>
+    <a href="https://www.patreon.com/posts/tangled-thoughts-101751147?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Read more on Patreon</a>
+  </div>
+
+  <div class="creative-sheet creative-section texts">
+    <h4 style="font-family: 'Parisienne', cursive; font-size: 26px;">Poem 2: Across the line</h4>
+    <p>Rain taps the glass like forgotten notes...</p>
+    <p>We are not destined to be together,</p>
+    <p>Tender and beautiful like our love.</p>
+    <p>Prohibitions destroy our chains.</p>
+    <p>Foolish laws, like shadows,</p>
+    <p>Erase the traces of our love.</p>
+    <p>I miss you, desperately miss you,</p>
+    <p>For the sweet, tender scent.</p>
+    <p>Your hair, the scent of your body.</p>
+    <p>I am dying of thirst for you.</p>
+    <p>But we are not to be together. No</p>
+    <p>You are ideal, fictional, like a dream.</p>
+    <p>I am real, alive, like fire.</p>
+    <p>We are different, like fire and water.</p>
+    <a href="https://www.patreon.com/posts/across-line-101155294?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Read more on Patreon</a>
+  </div>
+
+  <div class="creative-sheet creative-section texts">
+    <h4 style="font-family: 'Parisienne', cursive; font-size: 26px;">Poem 3: It's a strange thing, after all</h4>
+    <p>Remember that scent of love?</p>
+    <p>So warm, tender, and gentle.</p>
+    <p>Remember those touches in the night?</p>
+    <p>Your hands enveloping me in the darkness.</p>
+    <p>How we were real?</p>
+    <p>Without looking back.</p>
+    <p>Together, like children in a game.</p>
+    <p>In love despite the dawn.</p>
+    <p>You read to me at night.</p>
+    <a href="https://www.patreon.com/posts/its-strange-all-100504673?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link">Read more on Patreon</a>
+  </div>
+
+  <!-- 🧙‍♀️ Twilight Morgenstern – Ролевая -->
+  <div class="creative-sheet creative-section mixed twilight-rpg">
+  <div class="rp-images">
+    <img src="images/twilight1.jpg" alt="Twilight 1">
+    <img src="images/twilight2.jpg" alt="Twilight 2">
+    <img src="images/twilight3.jpg" alt="Twilight 3">
+    <img src="images/twilight4.jpg" alt="Twilight 4">
+    <img src="images/twilight5.jpg" alt="Twilight 3">
+    <img src="images/twilight6.jpg" alt="Twilight 4">
+  </div>
+  <div class="rp-text">
+    <h3 style="color: #663399;">Tvaylat Elis Hale-Morgenstern</h3>
+    <p><strong>🐾 Full name:</strong> Tvaylat Elis Morgenstern Drakon Idol Hale Cullen (ancestry)</p>
+    <p><strong>🐾 Age:</strong> 29 (born January 1995)</p>
+    <p><strong>🐾 Role:</strong> Potions Professor & Head of Hufflepuff House</p>
+    <p><strong>🐾 Blood Status:</strong> Pure-blood witch</p>
+    <p><strong>🐾 Residence:</strong> England / Italy</p>
+    <p><strong>🐾 Languages:</strong> English, Italian, French, Latin, Greek, basic German</p>
+    <p><strong>🐾 Patronus / Totem Animal:</strong> Arctic Wolf</p>
+    <p><strong>🐾 Familiar:</strong> Cat named Rikki</p>
+    <p><strong>🐾 Pet:</strong> Eagle named Vikki</p>
+    <p><strong>🐾 Studies:</strong> Potions, Herbology, Charms, Ancient Magic & Runes</p>
+    <p><strong>🐾 Other talents:</strong> Drawing, guitar & piano</p>
+    <p><strong>🐾 Wand:</strong> Applewood, 11 3/5 inches, unicorn hair core, slightly springy</p>
+
+    <p><strong>Personality:</strong> Tvay is kind and composed, rarely showing anger. She often appears cold or overly calm in public, though inside she’s deeply sensitive. Trust doesn't come easy to her, and her inner circle remains small but cherished. She controls her emotions well around others but can break down privately. She is loyal, emotionally deep, and quietly artistic.</p>
+  </div>
+  </div>
+</div>
+
+</main>
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">
+          <img src="images/logo.png" alt="Logo" class="footer-logo-img" />
+          Daria Drakon
+        </span>
+        <p class="footer-sub">Tvay's Art & Literary Haven</p>
+      </div>
+      <div class="footer-center">
+        <p><strong>Kharkiv, 2025</strong></p>
+        <p class="footer-copy">&copy; All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="footer-social-icon" /></a>
+        <a href="#"><img src="images/telegram.png" alt="Telegram" class="footer-social-icon" /></a>
+        <a href="#"><img src="images/patreon.png" alt="Patreon" class="footer-social-icon" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const sections = document.querySelectorAll(".creative-section");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filter = button.getAttribute("data-filter");
+
+      sections.forEach(section => {
+        if (filter === "all" || section.classList.contains(filter)) {
+          section.style.display = "flex"; // если flex используется
+        } else {
+          section.style.display = "none";
+        }
+      });
+    });
+  });
+});
+
+</script>
+
+</body>
+</html>
