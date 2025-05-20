@@ -8,30 +8,264 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet" />
+  <!-- в <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<!-- в HTML -->
+<div class="dot"><i class="fas fa-paw"></i></div>
+
 </head>
 <body>
   <header class="site-header">
     <div class="header-left">
-      <img src="img/logo.png" alt="Logo" class="header-icon" />
+      <img src="images/logo.png" alt="Logo" class="header-icon" />
     </div>
     <nav class="header-nav">
       <a href="index.html">Home</a>
       <a href="resume.html">Resume</a>
       <a href="creative.html">Creative</a>
       <a href="research.html">Research</a>
-      <a href="planner.html">Life Plan</a>
+      <a href="planner.html">Planner</a>
     </nav>
   </header>
 
   <main class="main-content">
-    <!-- Resume content goes here -->
+    <section class="academic-section">
+  <div class="category-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="article">Articles</button>
+    <button class="filter-btn" data-filter="project">Projects</button>
+    <button class="filter-btn" data-filter="thesis">Theses</button>
+  </div>
+
+  <div class="research-block articles">
+  <h3 class="section-title">📄 Scientific Article</h3>
+  <div class="timeline-entry" data-type="article">
+    <div class="date">25/02/2025</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>The Ethics of Artificial Intelligence: Boundaries and Responsibility</strong></p>
+      <p>This study explores global approaches to AI regulation and identifies key ethical principles for transparent, responsible development. It offers recommendations for safe implementation and highlights the risks of insufficient oversight.</p>
+      <p><a href="https://journals.kntu.kherson.ua/index.php/visnyk_kntu/issue/view/72" target="_blank">Read the article</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="research-block project">
+  <h3 class="section-title">📚 Literary Project</h3>
+  <div class="timeline-entry" data-type="project">
+    <div class="date">02/2024</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Implementing Thematic Design in Fiction</strong></p>
+      <p>A project on applying thematic structures to narrative and design in fiction writing, with materials published and presented during a student forum.</p>
+      <p><a href="https://drive.google.com/drive/folders/1jjpWvpoU_gbAC93htzsHRI7rwawoESWV" target="_blank">Project folder</a></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- THESES (20 items) -->
+    <div class="research-block theses">
+  <h3 class="section-title">📝 Conference Theses</h3>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">16/05/2025</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Information Security in Online Banking: Current Threats and Protection Methods</strong></p>
+      <p><a href="#">Coming soon...</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">15/05/2025</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Роль кольору та звуку у формуванні настрою в комп’ютерних іграх</strong></p>
+      <p><a href="#">Coming soon...</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">24/04/2025</div>
+   <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>AI image and text generators: new tools for artists</strong></p>
+      <p><a href="#">Coming soon...</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">04/04/2025</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Artificial Intelligence in Video Games: From NPCs To Generetive Worlds</strong></p>
+      <p><a href="#">Coming soon...</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">20/12/2024</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Штучний інтелект як інструмент реалізації навчання впродовж життя</strong></p>
+      <p><a href="http://edu-post-diploma.kharkov.ua/?news=...">View thesis</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">29/11/2024</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>The Use of Artificial Intelligence in Cybersecurity: Opportunities and Risks</strong></p>
+      <p><a href="https://www.researchgate.net/...">View thesis</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">20/11/2024</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Leadership in the Era of Innovative Change: How to Prepare Business for Digital Challenges</strong></p>
+      <p><a href="https://ekhnuir.karazin.ua/items/7e6a5495-f9e2-4505-ae42-f23cb4c93096">View thesis</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">16/10/2024</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Технологічні інновації у фінтех секторі України: сучасні виклики та перспективи після перемоги</strong></p>
+      <p><a href="https://ekhnuir.karazin.ua/items/35e31216-6ebc-4234-8189-ae01658cd2a2">View thesis</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">16/10/2024</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Protection of Critical Infrastructure from Cyberattacks: Modern Challenges and Solutions</strong></p>
+      <p><a href="https://ekhnuir.karazin.ua/items/35e31216-6ebc-4234-8189-ae01658cd2a2">View thesis</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">23/05/2024</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Використання інформаційних технологій та інноваційних підходів у протидії кіберзлочинності і торгівлі людьми</strong></p>
+      <p><a href="#">Coming soon...</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">22/05/2024</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Інтерактивна глобальна платформа для сталого розвитку "Green Hub"</strong></p>
+      <p><a href="https://international-relations-tourism.karazin.ua/themes/...">View thesis</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">17/05/2024</div>
+   <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>The Development of Digital Payment Systems and Their Role in the Modern Economy and Business</strong></p>
+      <p><a href="https://ekhnuir.karazin.ua/handle/123456789/18595">View thesis</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">24/04/2024</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Вплив цифрових платформ на процес письмової творчості: блоги, соцмережі, платформи для самовидавництва</strong></p>
+      <p><a href="https://drive.google.com/file/d/1TUJic8Z1Kz4n7gkCntdH084rjxYl86bG/view">View thesis</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">05/04/2024</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Using Virtual Reality in Education and Learning</strong></p>
+      <p><a href="https://ekhnuir.karazin.ua/items/3ae116fe-fdd2-424d-971d-756d7a6bee74">View thesis</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">20/03/2024</div>
+   <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Cybersecurity in the Internet of Things (IoT): Challenges and Protection Strategies</strong></p>
+      <p><a href="#">Coming soon...</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">30/11/2023</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>ШІ – нова загроза для кібербезпеки</strong></p>
+      <p><a href="https://www.researchgate.net/publication/375792997...">View thesis</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">20/09/2023</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Мистецтво, культура і медіа у світлі цифрових інновацій</strong></p>
+      <p><a href="https://ekhnuir.karazin.ua/items/4308d747-baa5-4f84-9853-687aaabc62cc">View thesis</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">06/04/2023</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>Чи замінить штучний інтелект ІТ-фахівця?</strong></p>
+      <p><a href="https://ekhnuir.karazin.ua/items/d3edee0d-86e8-4ce7-9f02-b75e5c594ed1">View thesis</a></p>
+    </div>
+  </div>
+  <div class="timeline-entry" data-type="thesis">
+    <div class="date">25/11/2022</div>
+    <div class="dot"><i class="fas fa-paw"></i></div>
+    <div class="entry-content">
+      <p><strong>3D Modeling – A New Way in Business</strong></p>
+      <p><a href="https://ekhnuir.karazin.ua/items/5c0e9bc0-aeab-4006-962c-987d2973e56f">View thesis</a></p>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const entries = document.querySelectorAll(".timeline-entry");
+  const blocks = document.querySelectorAll(".research-block");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const filter = button.getAttribute("data-filter");
+
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      // Показываем/скрываем каждую запись
+      entries.forEach(entry => {
+        const type = entry.getAttribute("data-type");
+        entry.style.display = (filter === "all" || type === filter) ? "flex" : "none";
+      });
+
+      // Показываем/скрываем блоки
+      blocks.forEach(block => {
+        const visibleEntries = Array.from(block.querySelectorAll(".timeline-entry"))
+          .filter(entry => entry.style.display !== "none");
+
+        block.style.display = visibleEntries.length > 0 ? "block" : "none";
+      });
+    });
+  });
+});
+</script>
+
+
+
+
+
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-left">
         <span class="footer-logo">
-          <img src="img/logo.png" alt="Logo" class="footer-logo-img" />
+          <img src="images/logo.png" alt="Logo" class="footer-logo-img" />
           Daria Drakon
         </span>
         <p class="footer-sub">Tvay's Art & Literary Haven</p>
@@ -41,9 +275,9 @@
         <p class="footer-copy">&copy; All rights reserved.</p>
       </div>
       <div class="footer-right">
-        <a href="#"><img src="img/linkedin.png" alt="LinkedIn" class="footer-social-icon" /></a>
-        <a href="#"><img src="img/telegram.png" alt="Telegram" class="footer-social-icon" /></a>
-        <a href="#"><img src="img/patreon.png" alt="Patreon" class="footer-social-icon" /></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="footer-social-icon" /></a>
+        <a href="#"><img src="images/telegram.png" alt="Telegram" class="footer-social-icon" /></a>
+        <a href="#"><img src="images/patreon.png" alt="Patreon" class="footer-social-icon" /></a>
       </div>
     </div>
   </footer>
