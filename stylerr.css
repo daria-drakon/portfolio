@@ -17,7 +17,7 @@ html, body {
   background: var(--light-bg);
   font-family: var(--main-font);
   color: var(--text-dark);
-  margin: 0;
+  margin-top: -12px;
 }
 
 /* 🔝 Header */
