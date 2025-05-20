@@ -334,7 +334,7 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  width: 160px;
+  width: 220px;
   flex-shrink: 0;
 }
 
