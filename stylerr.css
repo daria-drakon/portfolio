@@ -17,7 +17,6 @@ html, body {
   background: var(--light-bg);
   font-family: var(--main-font);
   color: var(--text-dark);
-  margin-top: -11px;
 }
 
 /* 🔝 Header */
@@ -25,10 +24,17 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background: url('img/your-header-image-rr.png') center/cover no-repeat;
+  background: url('img/your-header-image-rr.png') top center/cover no-repeat;
   height: 800px;
   padding: 2rem 2rem 0.5rem 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.site-header a {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: var(--menu-color);
+  font-weight: 500;
 }
 
 .header-icon {
@@ -37,18 +43,24 @@ html, body {
   margin-top: -30px;
 }
 
-.header-nav {
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--light-bg);
   display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  /*box-shadow: 0 2px 6px rgba(0,0,0,0.2);*/
 }
 
-.header-nav a {
-  text-decoration: none;
-  color: var(--menu-color);
-  font-weight: 500;
+.top-bar .header-icon {
+  height: 75px;
+  margin-top: 0;
 }
-
 /* 📄 Main */
 .main-content {
   padding: 2rem;
